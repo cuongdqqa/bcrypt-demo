@@ -18,7 +18,7 @@ const handleHashing = async () => {
      * So sánh hashing password === password ?
      */
     const isMatched = await bcrypt.compare(fakePlainText, cipherText)
-    if(!isMatched) console.log(`Plaintext and Ciphertext are not matched`)
+    if(!isMatched) console.log(`Plaintext and Ciphertext are not matched`);
 }
 
 handleHashing()
